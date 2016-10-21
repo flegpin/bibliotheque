@@ -24,9 +24,8 @@ else
 	
 	$_SESSION['tableau'] = $tableau	;
 }
-
-echo "
-<a class=\"btn btn-link btn-lg\" >
-<span id=\"ok_icon\" class=\"glyphicon glyphicon-ok\">
-			</span></a>";
 ?>
+
+<a class="btn btn-link btn-md" >
+<span id="ok_icon" class="glyphicon glyphicon-ok">
+			</span></a>

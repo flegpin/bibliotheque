@@ -9,19 +9,6 @@
 						
 <tr><td>
 			
-			 Marc Effron</td><td>
-			 One Page Talent Management: Eliminating Complexity</td><td> 
-			 Of the new business books that came out in 2010</td><td> 
-			 Affaires</td><td>
-			 new</td><td>
-			 500</td><td>
-			 <a  id="cart1" class="btn btn-link btn-lg" onclick="cart(5,1)">
-			 <span class="glyphicon glyphicon-shopping-cart">
-			 </span>
-			
-			</tr> 
-<tr><td>
-			
 			Peter G. Northouse</td><td>
 			 Theory and Practice</td><td> 
 			 Adopted at more than 800 colleges and universities</td><td> 
@@ -46,19 +33,7 @@
 			 </span>
 			
 			</tr>
- <tr><td>
-			
-			The Innovation Secre</td><td>
-			Carmine Gallo</td><td> 
-			You might want to take a look at how someone creat</td><td> 
-			Technologie</td><td>
-			new</td><td>
-			190</td><td>
-			<a  id="cart4" class="btn btn-link btn-lg" onclick="cart(10,4)">
-			 <span class="glyphicon glyphicon-shopping-cart">
-			 </span>
-			
-			</tr>
+
 <tr><td>
 			
 			Mixed-Media Technique</td><td>

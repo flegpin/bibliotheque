@@ -182,30 +182,7 @@ function verifier_form(pseudo2,nom,prenom,tel,password2,adresse,codePostal)
 		req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 		req.send("pseudo2=pseudo2&nom=nom&prenom=prenom&tel=tel&password2=password2&adresse=adresse&codePostal=codePostal");
       } 
- /*
-function colorer()
-{ 
-	  var req = getXMLHttpRequest();
 
-          req.onreadystatechange = function()
-          { 
-            if(req.readyState==4 && req.status==200)
-            {
-          	 
-		$('#connect').addClass('inv') ;//un getter
-		
-		document.getElementById("connect").innerHTML="";
-		
-		$('#deconnect').addClass('inv'); //un getter
-		
-		document.getElementById("deconnect").innerHTML="";
-		}
-          };
-
-          req.open("GET", "categorie.php?=", true);
-          req.send(null);     
-} 
-	  */
 function verifier_connection(pseudo1,password)
       { 
 	var req = getXMLHttpRequest();
@@ -266,9 +243,15 @@ function afficheC(Titre)
               document.getElementById("section2").innerHTML = req.responseText;
             }
           };
-
-          req.open("GET", "categorie.php?Titre="+Titre, true);
-          req.send(null);
+		if(Titre=="Affaires")
+		{req.open("GET", "categorieAff.php?Titre="+Titre, true);
+		req.send(null);}
+		else if (Titre=="Informatique")
+			{req.open("GET", "categorieInf.php?Titre="+Titre, true);
+		req.send(null);}
+		else 
+		{req.open("GET", "categorieTec.php?Titre="+Titre, true);
+		req.send(null);}
         }
       }  //afficheC();
 
@@ -280,14 +263,14 @@ function afficheC(Titre)
           if(req.readyState==4 && req.status==200)
            {
 			   
-			  var n = livre.split(",");
-    var chiffre= n[n.length - 1];
-	console.log(chiffre);
+			  //var n = livre.split(",");
+    var chiffre= cart//n[n.length - 1];
+	//console.log(chiffre);
 	
-    var livre2= n[0];
-	console.log(livre2);
-	livre=livre2;
-	console.log(livre);
+    //var livre2= //n[0];
+	//console.log(livre2);
+	//livre=livre2;
+	//console.log(livre);
 			 var text='cart'+chiffre;
              document.getElementById(text).innerHTML = req.responseText;
            }
